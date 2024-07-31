@@ -64,7 +64,7 @@ return {
     },
     window = {
       width = 25,
-      position = "right",
+      position = "left",
       mappings = {
         ["l"] = "open",
         ["h"] = "close_node",
