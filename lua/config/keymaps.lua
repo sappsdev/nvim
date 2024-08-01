@@ -3,6 +3,8 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 local Util = require("lazyvim/util")
+local LazyVim = require("lazyvim")
+local opts = { noremap = true, silent = true }
 
 map("n", "<leader>fT", function()
   Util.terminal(nil, { cwd = Util.root(), border = "rounded" })
