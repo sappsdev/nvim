@@ -17,3 +17,5 @@ map("n", "<leader>ft", function()
 end, { desc = "Terminal (cwd)" })
 
 map("n", "<leader>bs", "<cmd>BufferLinePick<cr>", { desc = "BufferLine Select" })
+
+map("t", "<esc>", "<cmd>close<cr>", { desc = "Hide Terminal" })
