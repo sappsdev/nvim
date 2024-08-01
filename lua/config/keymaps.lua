@@ -15,3 +15,5 @@ end, { desc = "Terminal (root)" })
 map("n", "<leader>ft", function()
   Util.terminal(nil, { border = "rounded" })
 end, { desc = "Terminal (cwd)" })
+
+map("n", "<leader>bs", "<cmd>BufferLinePick<cr>", { desc = "BufferLine Select" })
