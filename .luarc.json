@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
         "Util",
-        "vim"
+        "vim",
+        "symbols_filter"
     ]
 }
