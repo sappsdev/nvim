@@ -102,6 +102,16 @@ return {
 
           vim.keymap.set("n", "<Right>", "l", { buffer = buf_id, remap = true })
           vim.keymap.set("n", "<Left>", "h", { buffer = buf_id, remap = true })
+
+          vim.keymap.set("n", "<CR>", function()
+            local cur_entry = require("mini.files").get_fs_entry()
+            if cur_entry and cur_entry.fs_type == "file" then
+              require("mini.files").go_in({})
+              require("mini.files").close()
+            else
+              require("mini.files").go_in({})
+            end
+          end, { buffer = buf_id, desc = "Open file and close mini.files" })
         end,
       })
 
