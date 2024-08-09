@@ -1,6 +1,7 @@
 return {
   "neovim/nvim-lspconfig",
   opts = {
+    inlay_hints = { enabled = false },
     setup = {
       svelte = function(_, opts)
         LazyVim.lsp.on_attach(function(client, buffer)
